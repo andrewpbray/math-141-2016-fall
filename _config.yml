@@ -8,9 +8,7 @@ baseurl: "/math-141"
 url: "http://andrewpbray.github.io"
 #twitter_username: jekyllrb
 #github_username:  jekyll
-url2: "http://ismayc.github.io"
 urllabel: "Andrew's Webpage"
-url2label: "Chester's Webpage"
 
 # Build settings
 markdown: kramdown
