@@ -1,0 +1,24 @@
+## Example from last time {.build}
+
+How many quizzes should we have printed in total for MATH 141 today?
+
+- The Registrar at Reed has told us that students tend to come to class about 93% of the time
+- There are 38 students registered in total
+- What specific assumptions are required for us to assume a Binomial/Independent Trials model?
+    - Students come to class _independently_ of one another
+    - Each student has a 93% chance of attending class today
+    - Students either come to class or they don't
+- What does this distribution look like?
+    - http://ismay.shinyapps.io/ProbApp
+    
+    
+## 
+
+Probability distribution for $X \sim Pois(\lambda = 3.68)$.
+
+```{r, echo = FALSE, message = FALSE}
+library(ggplot2)
+x <- rpois(1e6, 3.68)
+qplot(x, geom = "bar")
+```
+

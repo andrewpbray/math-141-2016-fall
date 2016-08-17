@@ -1,0 +1,7 @@
+```{r message = FALSE}
+x <- rbinom(1e6, 40, .93)
+x <- as.factor(x)
+library(ggplot2)
+qplot(x, xlab = "n students", ylab = "prob")
+```
+
