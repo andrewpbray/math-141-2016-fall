@@ -4,6 +4,11 @@ title: Resources
 permalink: /resources/
 ---
 
+Your first stop for any help related to computing with data should be this book:
+
+[Getting used to R, RStudio, and R Markdown](https://ismayc.github.io/rbasics-book/)
+
+You can also seek help from its author, Chester Ismay in ITS.
 
 ### RMarkdown
 - [Reproducible Research through R Markdown](https://prezi.com/dvmgx17e_was/reproducible/)
