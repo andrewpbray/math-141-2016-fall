@@ -23,13 +23,7 @@ of applications from the natural and social sciences will be used.
 [Andrew Bray](https://andrewpbray.github.io)
 
 - Office: Library 304
-- Office Hours:  Mondays and Wednesdays 3 PM - 4 PM and by appointment
-
-[Chester Ismay](https://ismayc.github.io)
-
-- Office: ETC 223
-- Office Hours:  Mondays 10 AM - 11 AM, Wednesdays 1:30 PM - 2:30 PM, and by appointment
-
+- Office Hours:  Tu: 1:30 - 3 PM, Th: 3 - 4:30 PM, and by appointment
 
 **Evening Help Session**
 
@@ -53,15 +47,14 @@ on the first two, see the tabs at the top of the page.
 
 #### Exams
 
-We'll have several examinations and quizzes throughout the semester in order to challenge your understanding and provide us with a sense of where you're at. Some will be more traditional pen and paper and others are to be done with the computer
-using R.
+We'll have several examinations and quizzes throughout the semester in order to challenge your understanding and provide us with a sense of where you're at. Some will be more traditional pen and paper and others are to be done with the computer using R.
 
 **Midterm I**  
-Friday, February 26, 2016
+Friday, September 23, 2016
 
 **Midterm II**  
-Friday, April 8, 2016 (takehome)
+Friday, due October 14th, 2016 (takehome)
 
 **Final**  
-Tuesday, May 10, 2016, 9 AM - 11 AM (Eliot 314)
+Finals Week
 
