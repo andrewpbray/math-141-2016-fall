@@ -5,6 +5,8 @@ output: ioslides_presentation
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+library(ggplot2)
+library(dplyr)
 ```
 
 ## Stratified sampling {.smaller}
@@ -20,36 +22,36 @@ head(df)
 ## Population view
 
 ```{r plot-strat, echo = FALSE, message=FALSE, warning=FALSE}
-library(mosaic)
-densityplot(~salary, groups = teams, data = df, auto.key = TRUE)
+ggplot(df, aes(x = salary, color = teams)) + geom_density() + geom_rug()
 ```
 
-## SRS vs Stratified
+## SRS vs Stratified {.smaller}
 
 ```{r sim}
 # population mean
-mean(~salary, data = df)
+mean(df$salary)
 # SRS
-mean(~salary, data = sample(df, 40))
+df %>% sample_n(40) %>% summarize(mean(salary))
 # Stratified sample
-strat.samp <- rbind(sample(subset(df, teams == "yankees"), 10), sample(subset(df,
-    teams == "padres"), 10), sample(subset(df, teams == "mariners"), 10), sample(subset(df,
-    teams == "dodgers"), 10))
-mean(~salary, data = strat.samp)
+df %>% 
+  group_by(teams) %>% 
+  sample_n(10) %>% 
+  ungroup() %>%
+  summarize(mean(salary))
 ```
 
 ## Long-run performance
 
-```{r comp, echo=FALSE}
+```{r comp, echo=FALSE, message = FALSE}
 # Comparison
+library(mosaic)
 SRS <- do(1000) * mean(~salary, data = sample(df, 40))
 STR <- do(1000) * mean(~salary, data = rbind(sample(subset(df, teams == "yankees"), 10),
                                              sample(subset(df, teams == "padres"), 10),
                                              sample(subset(df, teams == "mariners"), 10),
                                              sample(subset(df, teams == "dodgers"), 10)))
-sim <- data.frame(SRS, STR)
-names(sim) = c("SRS", "STR")
-densityplot(~SRS + STR, data = sim, auto.key = TRUE)
+sim <- data.frame(salary = rbind(SRS, STR), meth = rep(c("SRS", "STR"), each = 1000))
+ggplot(sim, aes(x = mean, color = meth)) + geom_density()
 ```
 
 #

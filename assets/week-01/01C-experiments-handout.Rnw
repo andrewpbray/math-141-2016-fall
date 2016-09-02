@@ -29,7 +29,7 @@
 \author{Prof. Bray}
 \date{Spring 2016}
 
-\rhead{\textsc{January 29, 2016}}
+\rhead{\textsc{September 2, 2016}}
 
 
 \begin{document}
