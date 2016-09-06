@@ -316,7 +316,7 @@ div.tocify {
 <p>If we want to focus only on departure delays of flights headed to Los Angeles, we need to first <code>filter</code> the data for flights with that destination (<code>dest == &quot;LAX&quot;</code>) and then make a histogram of the departure delays of only those flights.</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">lax_flights &lt;-<span class="st"> </span>flights %&gt;%
 <span class="st">  </span><span class="kw">filter</span>(dest ==<span class="st"> &quot;LAX&quot;</span>)
-<span class="kw">qplot</span>(<span class="dt">x =</span> dep_delay, <span class="dt">data =</span> flights, <span class="dt">geom =</span> <span class="st">&quot;histogram&quot;</span>)</code></pre></div>
+<span class="kw">qplot</span>(<span class="dt">x =</span> dep_delay, <span class="dt">data =</span> lax_flights, <span class="dt">geom =</span> <span class="st">&quot;histogram&quot;</span>)</code></pre></div>
 <p>Let’s decipher these two commands (OK, so it might look like three lines, but the first two physical lines of code are actually part of the same command. It’s common to add a break to a new line after <code>%&gt;%</code> to help readability).</p>
 <ul>
 <li>Command 1: Take the <code>flights</code> data frame, <code>filter</code> for flights headed to LAX, and save the result as a new data frame called <code>flights</code>.

@@ -150,7 +150,7 @@ and then make a histogram of the departure delays of only those flights.
 ```{r lax-flights-hist}
 lax_flights <- flights %>%
   filter(dest == "LAX")
-qplot(x = dep_delay, data = flights, geom = "histogram")
+qplot(x = dep_delay, data = lax_flights, geom = "histogram")
 ```
 
 Let's decipher these two commands (OK, so it might look like three lines, but
