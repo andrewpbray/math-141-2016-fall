@@ -11,6 +11,8 @@ The essential sentence
 library(ggplot2)
 library(dplyr)
 library(oilabs)
+library(pnwflights14)
+data(flights)
 ```
 
 A general format:
@@ -72,6 +74,7 @@ A sentence involving a dataframe
 Length returns the length of a vector (column or row)
 
 ```{r}
+data(arbuthnot)
 length(arbuthnot$year)
 ```
 
@@ -116,3 +119,10 @@ The pipe
 ========================================================
 
 ![pipe](pipe.png)
+
+
+Exercise 8
+========================================================
+What is the tail number of the plane with the fastest avg_speed? Hint: If you just want to show the avg_speed and tailnum and none of the other variables, use the select function at the end of your pipe to select just these two variables with select(avg_speed, tailnum). You can google this tail number to find out more about the aircraft.
+
+

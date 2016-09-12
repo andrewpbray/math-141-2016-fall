@@ -89,6 +89,7 @@ Length returns the length of a vector (column or row)
 
 
 ```r
+data(arbuthnot)
 length(arbuthnot$year)
 ```
 
@@ -119,7 +120,7 @@ p <- qplot(x = year,y =girls, data = arbuthnot, geom="line")
 p
 ```
 
-![plot of chunk unnamed-chunk-9](02B-R-concepts-figure/unnamed-chunk-9-1.png) 
+![plot of chunk unnamed-chunk-9](02B-R-concepts-figure/unnamed-chunk-9-1.png)
 
 
 Will this work?
@@ -133,7 +134,7 @@ example:
 qplot(year,y =girls, data = arbuthnot, geom="line")
 ```
 
-![plot of chunk unnamed-chunk-10](02B-R-concepts-figure/unnamed-chunk-10-1.png) 
+![plot of chunk unnamed-chunk-10](02B-R-concepts-figure/unnamed-chunk-10-1.png)
 
 Yes! If you don't name your arguments, R will guess based on their order.
 
@@ -144,3 +145,10 @@ The pipe
 ========================================================
 
 ![pipe](pipe.png)
+
+
+Exercise 8
+========================================================
+What is the tail number of the plane with the fastest avg_speed? Hint: If you just want to show the avg_speed and tailnum and none of the other variables, use the select function at the end of your pipe to select just these two variables with select(avg_speed, tailnum). You can google this tail number to find out more about the aircraft.
+
+
