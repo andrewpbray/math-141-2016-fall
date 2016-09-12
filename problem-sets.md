@@ -23,8 +23,6 @@ well as the material that we address in class. You're encouraged to work on the 
 **PS5**:  Read the article on fivethirtyeight.com about Zika <a href = "https://fivethirtyeight.com/features/why-its-so-hard-to-prove-zika-is-causing-birth-defects/" target = "_blank">here</a> and answer the questions [here]({{ site.baseurl }}/problem-sets/ps5-zika/).  Also, please work through problems 1, 2, 3, 5, 7, and 10 in the Exercises at the end of Chapter 2.
 
 **PS4**: Please work through the exercises in probability found [here]({{ site.baseurl }}/problem-sets/ps4/).  A PDF version of the problems is [here]({{ site.baseurl }}/problem-sets/ps4.pdf).
-
-**PS3**: Please work through number 1 - 7 and 11 [here]({{ site.baseurl }}/problem-sets/ps3/).  A PDF version of the problems is [here]({{ site.baseurl }}/problem-sets/ps3.pdf). The remaining problems will be with PS4.
 -->
 
 
@@ -33,3 +31,5 @@ well as the material that we address in class. You're encouraged to work on the 
 **PS1**: Please work through problems 1, 4, 6, 8, 10, 11, 15, 16, 17, 19, and 22 in the Exercises at the end of Chapter 1 (the first one is labeled 1.1 on page 43).
 
 **PS2**: Please work through problems 24, 26, 33, 36, 37, 40, 42, 47, and 50 in the Exercises at the end of Chapter 1.
+
+**PS3**: Please work through number 1 - 7 and 11 [here]({{ site.baseurl }}/assets/week-03/ps3.pdf). The remaining problems will be with PS4.
