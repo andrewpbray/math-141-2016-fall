@@ -34,4 +34,4 @@ well as the material that we address in class. You're encouraged to work on the 
 
 **PS3**: Please work through number 1 - 7 and 11 [here]({{ site.baseurl }}/assets/week-03/ps3.pdf). The remaining problems will be with PS4.
 
-**PS4**: Please work through the exercises found [here]({{ site.baseurl }}/assets/week-04/ps4.pdf). This PS is due Friday, 9/23.
+**PS4**: Please work through the exercises found [here]({{ site.baseurl }}/assets/week-04/ps4.pdf) as well as problems 8-10 above. This PS is due Friday, 9/23.
