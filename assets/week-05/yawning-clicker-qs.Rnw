@@ -1,0 +1,214 @@
+\documentclass[13pt]{beamer}
+
+\usetheme{Copenhagen}
+
+\usecolortheme[rgb={0.60884,0.1590909,0.23106061}]{structure} % Red colors
+\usefonttheme{serif}
+\setbeamerfont{frametitle}{size=\normalsize}
+
+\setbeamertemplate{navigation symbols}{}%remove navigation symbols
+
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{multicol}
+\usepackage{fmtcount}
+
+\newcounter{count}
+\addtocounter{count}{1}
+
+\newcommand{\quotes}[2]{\centering \Large{``#1"\\
+\vspace*{0.2in}
+\hspace*{0.5in} - #2}}
+
+\newcommand{\question}{ \textbf{(\decimal{count})} \stepcounter{count}}
+\newcommand{\pic}[2]{\hfill\includegraphics[scale=#2]{#1}\hspace*{\fill}}
+%\newcommand{\blank}[2]{\underline{\invisible<#2>{{\color{red} {#1}}}}}
+
+\newenvironment{stepenumerate}{\begin{enumerate}[<+->]}{\end{enumerate}}
+\newenvironment{stepitemize}{\begin{itemize}[<+->]}{\end{itemize} }
+\newenvironment{click}{\begin{enumerate}[A]}{\end{enumerate}}
+
+\title{Section 5.2}
+\author{Chester Ismay, Tom Linton}
+\institute{Ripon College, Central College}
+\date{}
+
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+
+\begin{frame}{Learning Quote of the Day}
+\quotes{You can forget facts but you cannot forget understanding.}{Eric Mazur}
+\end{frame}
+
+\begin{frame}{Yawn...}
+\question Do you believe that yawning is contagious?
+\begin{click}
+	\item Yes, and I'm confident.
+	\item Yes, but I'm not sure.
+    \item No, but I'm not sure.
+    \item No, and I'm confident.
+\end{click}
+\end{frame}
+
+\begin{frame}{Exploration 5.2}
+\begin{stepitemize}
+	\item The gang at the TV show \textit{Mythbusters} investigated whether yawning was contagious.  
+	\item Fifty people attending a flea market in San Francisco were recruited to participate.
+	\item Let's watch the video clip from the show.
+\end{stepitemize}
+
+\url{http://www.discovery.com/tv-shows/mythbusters/videos/is-yawning-contagious-minimyth/}
+
+\end{frame}
+
+
+\begin{frame}{Mythbusters induced yawn?}
+\question How about after watching the \textit{Mythbusters} video:  do you believe that yawning is contagious?
+\begin{click}
+	\item Yes, and I'm confident.
+	\item Yes, but I'm not sure.
+    \item No, but I'm not sure.
+    \item No, and I'm confident.
+\end{click}
+\end{frame}
+
+\begin{frame}{Observational Units}
+\question What is the population in this study?
+
+\begin{click}
+	\item How many times Kari would yawn in the long-run
+	\item All American adults
+    \item All San Francisco residents
+    \item None of the above. %Correct
+\end{click}
+
+\end{frame}
+
+\begin{frame}{Explanatory \& Response Variables}
+\question Identify the correct statement about the explanatory \& response variables in this study.
+
+\begin{click}
+	\item Explanatory - Whether the subject yawned, Response - exposure to yawning ``seed''
+    \item Explanatory is categorical, response is quantitative
+    \item Explanatory - Whether Kari yawned, Response - Whether the subject yawned %Correct
+    \item Two of the above are true
+    \item None of the above
+\end{click}
+
+\end{frame}
+
+\begin{frame}{Hypotheses}
+\question What are the two competing hypotheses?
+
+\begin{click}
+	\item $H_0$:  Yawning is contagious, $H_a$:  Yawning is not contagious
+    \item $H_0: \pi_{yawn} = \pi_{no\_yawn}$, $H_a:  \pi_{yawn} > \pi_{no\_yawn}$
+    \item $H_0: \hat{p}_{seed} = \hat{p}_{no\_seed}$, $H_a: \hat{p}_{seed} > \hat{p}_{no\_seed}$
+    \item Two of the above are true
+    \item None of the above
+\end{click}
+
+\end{frame}
+
+\begin{frame}{Details}
+The researchers found that 10 of 34 subjects who had been given a yawn seed actually yawned themselves, compared with 4 of 16 subjects who had not been given a yawn seed.  Organize this information into a $2 \times 2$ table.
+\pause
+
+\pic{yawning.png}{0.8} 
+
+\end{frame}
+
+\begin{frame}{Conditional Proportions \& Statistic}
+\pic{yawning.png}{0.8} 
+
+\question Calculate the appropriate statistic based on the table above.
+
+\begin{click}
+	\item 0.42857 %10/14 - 4/14
+    \item -0.20879 %10/14 - 24/26
+    \item 0.08333 %10/24 - 4/12
+    \item 0.2800 %14/50
+    \item None of the above %Correct [10/34 - 4/16 = 0.044]
+\end{click}
+
+\end{frame}
+
+\begin{frame}{Set-up}
+\begin{stepitemize}
+	\item The key to our simulation analysis is to assume that if yawning is not contagious (null hypothesis), then the 14 yawners would have yawned regardless of whether or not they had seen the yawn seed.
+	\item Similarly, we'll assume that the 36 non-yawners would not have yawned, no matter which group they had been assigned. 
+	\item In other words, our simulation assumes the null hypothesis is true---that there is no association, no connection, between the yawn seed and actual yawning.
+\end{stepitemize}
+
+\end{frame}
+
+\begin{frame}{Simulation Process}
+\begin{stepitemize}
+	\item Take a set of 50 cards, with 14 blue cards (to represent the yawners) (the total of the first row) \pause and 36 green cards (to represent those who did not yawn) (the total of the second row).
+	\item Shuffle the cards well, and randomly deal out 34 to be the yawn seed group (the rest go to the control group).
+	\item Count how many yawners (blue cards) you have in each group and how many non-yawners (green cards) you have in each group.
+	\item Construct the two-way table to show the number of yawners and non-yawners in each group (where clearly nothing different happened to those in ``group A'' and those in ``group B" - any differences between the two groups that arise are due purely to the random assignment process).
+\end{stepitemize}
+\end{frame}
+
+\begin{frame}{Simulation Results}
+We need to perform a large number of repetitions (say, 1000 or more) in order to assess whether the \textit{MythBusters}' result is typical or surprising when yawning is not contagious. To do this we will use the \textbf{Two Proportions} applet and click on \textbf{Show Shuffle Options}. \pause
+
+\vspace*{0.1in}
+
+Use this applet to conduct 1000 repetitions of this simulation. Change the \textbf{Number of shuffles} to 1000 and press \textbf{Shuffle}.  The applet produces a dotplot showing the null distribution.
+
+\end{frame}
+
+\begin{frame}{What are these dots?}
+\question What does each dot in this dotplot represent?
+
+\begin{click}
+	\item The probability of obtaining a value as extreme as the observed statistic
+    \item One simulated proportion of successes for the yawn group
+	\item A simulated difference in sample proportions %Correct
+    \item A sample average number of yawns
+    \item None of the above
+\end{click}
+
+\end{frame}
+
+\begin{frame}
+
+\question We can compute a $p$-value by entering \underline{\hspace*{0.5in}} in the box next to \textbf{Count} and selecting \underline{\hspace*{1in}} from the dropdown menu. \pause 
+
+\begin{click}
+	\item 0, Greater Than
+    \item 0.5, Greater Than
+    \item 0.044, Beyond
+    \item -0.044, Greater Than
+    \item None of the above %Correct [0.044, Greater Than]
+\end{click}
+
+\end{frame}
+
+\begin{frame}{Interpret the $p$-value}
+
+This $p$-value can be interpreted as: \pause
+
+\vspace*{0.1in}
+
+{Under the assumption that yawning is not contagious\pause, if we repeated the shuffling/randomizing many, many times\pause, the probability we would obtain results as extreme or more extreme than 0.044 \pause is about 0.5. \pause}
+
+\end{frame}
+
+\begin{frame}{Correct Conclusion?}
+The \textit{MythBusters}' hosts concluded from their study that there is ``little doubt, yawning seems to be contagious." Based on your simulation analysis of their data, considering the issue of statistical significance, do you agree with this conclusion? Explain your answer, as if to the hosts. Be sure to explain why you conducted the simulation analysis and what the analysis revealed about the research question. \pause
+\begin{stepitemize}
+	\item No, it is true that a higher proportion (29.4\%) of people yawned when viewing the yawn ``seed" than compared to the proportion of yawners without a yawn seed (25\%).
+	\item But, the difference (4.4\%) is very small and happens quite easily just by random chance. \pause
+	\item The simulation we conducted helped to quantify that a difference like 4.4\% or larger happens about 50\% of the time just by chance (even when yawning is NOT contagious).
+\end{stepitemize}
+\end{frame}
+
+\end{document}
