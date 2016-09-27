@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Problem Set 5 - Sentencing
-permalink: /assets/week05/ps5-sentencing/
+permalink: /assets/week05/ps5-sentencing
 ---
 
 <style type="text/css">
