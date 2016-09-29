@@ -24,11 +24,9 @@ RMarkdown document. You should complete work on your lab by **Thursday** at 11:5
 
 3. <a href = "{{ site.baseurl }}/assets/week-03/probability.html" target = "_blank">Probability</a>
 
-<!--  [KEY <a href = "{{ site.baseurl }}/assets/lab-keys/lab1-key.Rmd" target = "_blank"> (Rmd)</a><a href = "{{ site.baseurl }}/assets/lab-keys/lab1-key.html" target = "_blank"> (HTML)</a>] 
+4. <a href = "{{ site.baseurl }}/assets/week-05/normal_distribution.html" target = "_blank">The Normal Distribution</a>
 
- [KEY <a href = "{{ site.baseurl }}/assets/lab-keys/lab3-key.Rmd" target = "_blank"> (Rmd)</a><a href = "{{ site.baseurl }}/assets/lab-keys/lab3-key.html" target = "_blank"> (HTML)</a>] 
-
-4. <a href = "{{ site.baseurl }}/assets/week-06/normal_distribution.html" target = "_blank">The Normal Distribution</a> [KEY <a href = "{{ site.baseurl }}/assets/lab-keys/lab4-key.Rmd" target = "_blank"> (Rmd)</a> <a href = "{{ site.baseurl }}/assets/lab-keys/lab4-key.html" target = "_blank"> (HTML)</a>]  (Bottom image `histQQmatchgg.png` is available (<a href = "{{ site.baseurl }}/assets/lab-keys/histQQmatchgg.png" target = "_blank">here</a>) and you will need it in the same folder as where you saved your Rmd in order to Knit the Rmd.)
+<!--
 
 5. <a href = "{{ site.baseurl }}/assets/week-07/inf_for_categorical_data.html" target = "_blank">Inference for Categorical Data</a> [KEY <a href = "{{ site.baseurl }}/assets/lab-keys/lab5-key.Rmd" target = "_blank"> (Rmd)</a><a href = "{{ site.baseurl }}/assets/lab-keys/lab5-key.html" target = "_blank"> (HTML)</a>] 
 
