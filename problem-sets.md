@@ -20,8 +20,6 @@ well as the material that we address in class. You're encouraged to work on the 
 
 **PS6**: Please complete the Midterm Evaluation Survey [here](http://goo.gl/forms/L5dkZ7UL8E). Also, please work through problems 13, 16, 18, 20, 29, 37, 38, 39, and 40 in the Exercises at the end of Chapter 2.
 
-**PS5**:  Read the article on fivethirtyeight.com about Zika <a href = "https://fivethirtyeight.com/features/why-its-so-hard-to-prove-zika-is-causing-birth-defects/" target = "_blank">here</a> and answer the questions [here]({{ site.baseurl }}/problem-sets/ps5-zika/).  Also, please work through problems 1, 2, 3, 5, 7, and 10 in the Exercises at the end of Chapter 2.
-
 -->
 
 
@@ -36,3 +34,5 @@ well as the material that we address in class. You're encouraged to work on the 
 **PS4**: Please work through the exercises found [here]({{ site.baseurl }}/assets/week-04/ps4.pdf). This PS is due Friday, 9/23.
 
 **PS5**:  Read the article on fivethirtyeight.com about sentencing (written last fall) <a href = "http://fivethirtyeight.com/features/prison-reform-risk-assessment/" target = "_blank">here</a> and answer the questions [here]({{ site.baseurl }}/assets/week-05/ps5-sentencing.html).  Also, please work through problems 1, 2, 3, 5, 7, and 10 in the Exercises at the end of Chapter 2.
+
+**PS6**: Please work through problems 13, 16, 18, 20, 29, 37, 38, 39, and 40 in the Exercises at the end of Chapter 2.
