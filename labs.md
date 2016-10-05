@@ -26,6 +26,8 @@ RMarkdown document. You should complete work on your lab by **Thursday** at 11:5
 
 4. <a href = "{{ site.baseurl }}/assets/week-05/normal_distribution.html" target = "_blank">The Normal Distribution</a>
 
+5. <a href = "{{ site.baseurl }}/assets/week-06/inf_for_categorical_data.Rmd" target = "_blank"Confidence Intervals for Proportions</a>
+
 <!--
 
 5. <a href = "{{ site.baseurl }}/assets/week-07/inf_for_categorical_data.html" target = "_blank">Inference for Categorical Data</a> [KEY <a href = "{{ site.baseurl }}/assets/lab-keys/lab5-key.Rmd" target = "_blank"> (Rmd)</a><a href = "{{ site.baseurl }}/assets/lab-keys/lab5-key.html" target = "_blank"> (HTML)</a>] 
