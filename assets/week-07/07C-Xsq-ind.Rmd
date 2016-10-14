@@ -86,7 +86,7 @@ qplot(chisqs, geom = "density") +
 ```
 
 
-## Conditions for the $\chi^2$ approximation. {.build}
+## Conditions for the $\chi^2$ approximation {.build}
 
 1. Independent observations
 2. Each cell count has a count $\ge$ 5
@@ -240,10 +240,15 @@ library(oilabs)
 ```
 
 
-## inference function
+## inference function {.smaller}
+
+```{r echo = FALSE}
+d <- data.frame(treatment, pain)
+```
+
 
 ```{r, fig.height = 3, warning=FALSE}
-inference(x = treatment, y = pain, est = "proportion", type = "ht", 
+inference(x = treatment, y = pain, data = d, statistic = "proportion", type = "ht", 
           method = "theoretical")
 ```
 
