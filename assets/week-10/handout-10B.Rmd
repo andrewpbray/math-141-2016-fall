@@ -1,7 +1,5 @@
 ---
 title: "Math 141"
-#author: "Chester Ismay"
-date: "April 6, 2016"
 output: pdf_document
 ---
 
