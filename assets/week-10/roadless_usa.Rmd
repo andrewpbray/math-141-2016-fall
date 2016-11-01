@@ -2,16 +2,20 @@
 title: "Roadless USA"
 output:
   html_document:
-    theme: cerulean
-    highlight: pygments
     css: ../lab.css
+    highlight: pygments
+    theme: cerulean
+    toc: true
+    toc_float: true
 ---
 
 Wilderness is, by definition, roadless.  Untouched areas provide important habitat and play a key role in ensuring ecological balance. According to the U.S. Geological Survey, roads affect the ecology of at least 22\% of the land area of the continental United States. Knowing what portion of the US is within 1 mile of a road can help determine wilderness areas since there is a link between access by road and human presence.
 
-A conservation policy called \emph{roadless area conservation} aims to limit road construction in order to halt negative environmental impact on designated public lands. The US Forest Service has formalized the concept of \emph{Inventoried Roadless Areas} as lands identified by governmental agencies without roads that could be candidates for roadless area conservation. According to the US Forest Service, inventoried roadless areas comprise only 2\% of the land in the continental United States.
+A conservation policy called *roadless area conservation* aims to limit road construction in order to halt negative environmental impact on designated public lands. The US Forest Service has formalized the concept of *Inventoried Roadless Areas* as lands identified by governmental agencies without roads that could be candidates for roadless area conservation. According to the US Forest Service, inventoried roadless areas comprise only 2\% of the land in the continental United States.
 
 This activity is intended to help reinforce concepts of sampling and confidence intervals while simultaneously understanding how to estimate the proportion of the United States that is within 1 mile of a road. 
+
+## Data Collection
 
 You will work in pairs, and will need one computer per group.  Please run the following lines in the Console of RStudio:
 
@@ -38,7 +42,7 @@ myroadless
 
 Now, one at a time, run the `getLocation(1)` commands in the Console of RStudio (one for each of the 20 locations you randomly sampled, so the first time you should run `getLocation(1)`, then `getLocation(2)}`, etc.). If the Google map doesn't display, please ensure that your pop-up blocker is turned off.
 
-At each location, take notes of whether it was within the continental US, if so, whether it was within a mile of a road, as well as any notes about the location (please specify which state, ocean, or country it is in).  These should be entered into the a google spreadsheet accessible [here](https://docs.google.com/a/reed.edu/spreadsheets/d/1-91zyw01BG0UjaxFqTetAQOxlvSqlRjqAbdk8yZE5QY/edit?usp=sharing). Your groups data should be entered on a new sheet, which can be created by clicking the plus in the lower left hand corner. You can copy/paste your `myroadless` dataframe in the sheets and fill in the information for the last three columns.
+At each location, take notes of whether it was within the continental US, if so, whether it was within a mile of a road, as well as any notes about the location (please specify which state, ocean, or country it is in).  These should be entered into the a google spreadsheet accessible [here](https://docs.google.com/a/reed.edu/spreadsheets/d/19-phTY-Uc2NOI1WqcEOzJI65SKqdSYkfk43vtKQ67Ak/edit?usp=sharing). Your groups data should be entered on a new sheet, which can be created by clicking the plus in the lower left hand corner. You can copy/paste your `myroadless` dataframe in the sheets and fill in the information for the last three columns.
 
 Once you've filled in the sheet, please:
 
@@ -49,11 +53,11 @@ Once you've filled in the sheet, please:
 
 * * *
 
-## On Your Own
-- Why did we use `binom.test(X, n)` instead of a adding and subtracting 1.96 SEs?
-- A student reports that their confidence interval for the proportion of the US that is within a mile of a road ranges from 0.38 to 0.84. They state that they are 95% confident that if they took another sample, the sample proportion would be in this interval. What is wrong with their reasoning?
-- A student reports that their 95% confidence interval for the proportion of the US that is within a mile of a road ranges from 0.38 to 0.86. They state that it's unlikely that the true proportion is equal to 0.9. Is their reasoning correct?
-- One group finds that out of the 17 points they sampled, 11 of them were within a mile of a road. A student from a different group reports that she also found 11 points within a mile of a road, but sampled 19 points. She concludes that her standard error must be greater. Is this student correct?
+## More Practice
+5. Why did we use `binom.test(X, n)` instead of a adding and subtracting 1.96 SEs?
+6. A student reports that their confidence interval for the proportion of the US that is within a mile of a road ranges from 0.38 to 0.84. They state that they are 95% confident that if they took another sample, the sample proportion would be in this interval. What is wrong with their reasoning?
+7. A student reports that their 95% confidence interval for the proportion of the US that is within a mile of a road ranges from 0.38 to 0.86. They state that it's unlikely that the true proportion is equal to 0.9. Is their reasoning correct?
+8. One group finds that out of the 17 points they sampled, 11 of them were within a mile of a road. A student from a different group reports that she also found 11 points within a mile of a road, but sampled 19 points. She concludes that her standard error must be greater. Is this student correct?
 
 <div id="license">
 This is a product of OpenIntro that is released under a 
