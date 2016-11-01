@@ -23,7 +23,7 @@ of applications from the natural and social sciences will be used.
 [Andrew Bray](https://andrewpbray.github.io)
 
 - Office: Library 304
-- Office Hours:  Tu: 1:30 - 3 PM, Th: 3 - 4:30 PM, and by appointment
+- Office Hours:  Tu: 1:45 - 3 PM, Th: 3 - 4:30 PM, and by appointment
 
 **Evening Help Session**
 
