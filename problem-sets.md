@@ -40,3 +40,5 @@ well as the material that we address in class. You're encouraged to work on the 
 **PS7**: Read the articles on fivethirtyeight.com <a href = "http://fivethirtyeight.com/features/statisticians-found-one-thing-they-can-agree-on-its-time-to-stop-misusing-p-values/" target = "_blank">here</a> and Nature <a href = "http://www.nature.com/news/statisticians-issue-warning-over-misuse-of-p-values-1.19503" target = "_blank">here</a> and answer the questions [here]({{ site.baseurl }}/assets/week-07/ps7-pvals.html). Also, please work through problems 1, 11, 12, 20, 28, 30, 35, 37, 39, and 42 in the Exercises at the end of Chapter 3.
 
 **PS8**: Please work through problems 5, 10, 14, 30, 35, 44, and 45 in the Exercises at the end of Chapter 4.
+
+**PS9**: Please work through problems 1, 5, 6, 17, 21, 23, 30, 31, and 33 in the Exercises at the end of Chapter 5.
