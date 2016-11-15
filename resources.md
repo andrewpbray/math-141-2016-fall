@@ -4,6 +4,8 @@ title: Resources
 permalink: /resources/
 ---
 
+All of the slides for this course can be accessed via [github](https://github.com/andrewpbray/math-141) in the *assets* folder.
+
 Your first stop for any help related to computing with data should be this book:
 
 [Getting used to R, RStudio, and R Markdown](https://ismayc.github.io/rbasics-book/)
