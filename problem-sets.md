@@ -43,4 +43,4 @@ well as the material that we address in class. You're encouraged to work on the 
 
 **PS9**: Please work through problems 1, 5, 6, 17, 21, (23), 30(a)bcdef, 31(a)bcdef, and 33a(b) in the Exercises at the end of Chapter 5. *You may reserve the problems in parentheses for the next problem set*.
 
-**PS10**: Please work through problems 1, 2, 3, 7, 9, 11, 14, and 16 in the Exercises at the end of Chapter 6. (Due Wednesday)
+**PS10**: Please work through problems 1, 2, 3, 7, 9, and 11 in the Exercises at the end of Chapter 6. (Due Wednesday)
