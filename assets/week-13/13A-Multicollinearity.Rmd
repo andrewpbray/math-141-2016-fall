@@ -8,7 +8,7 @@ output:
 ```{r setup, include=FALSE}
 library(knitr)
 options(digits=3)
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
 library(dplyr)
 library(ggplot2)
 library(oilabs)
@@ -174,7 +174,7 @@ of a single variable?
 
 ## EDA for `price` {.build}
 
-```{r}
+```{r warning = FALSE}
 qplot(x = price, data = LA, geom = "histogram")
 ```
 
