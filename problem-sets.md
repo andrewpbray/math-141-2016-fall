@@ -28,7 +28,7 @@ well as the material that we address in class. You're encouraged to work on the 
 
 **PS10**: Please work through problems 1, 2, 3, 7, 9, and 11 in the Exercises at the end of Chapter 6. (Due Wednesday)
 
-**PS11**: Please work through problems 13, 14, 15 in the Exercises at the end of Chapter 6 (Due Wednesday). If you weren't able to attend the seminar, please read [this paper](http://people.math.umass.edu/~lavine/whatisbayes.pdf) and include your thoughts on the following questions in your problem set.
+**PS11**: Please work through problems 13, 14, 15 in the Exercises at the end of Chapter 6. If you weren't able to attend the seminar, please read [this paper](http://people.math.umass.edu/~lavine/whatisbayes.pdf) and include your thoughts on the following questions in your problem set.
 
 1. This paper discusses the likelihood function an important statistical concept. Since it's a function, what is it a function \emph{of}? How is it the same or different from a p-value?
 2. In the second bullet point in the discussion, three perspectives are offered. Which do you find the most compelling? Why?
